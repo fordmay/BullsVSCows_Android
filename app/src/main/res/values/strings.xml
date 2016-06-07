@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Bulls VS Cows</string>
+    <string name="app_name">Bulls VS Cows Beta</string>
+    <string name="search_title">Search</string>
 </resources>
