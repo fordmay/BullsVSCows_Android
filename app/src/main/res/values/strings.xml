@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">Bulls VS Cows Beta</string>
     <string name="search_title">Search</string>
-
+    <!--names for tabs-->
+    <string name="tab_game">Game</string>
+    <string name="tab_chat">Chat</string>
+    <!--for ActionBarDrawerToggle-->
     <string name="view_navigation_open">Open</string>
     <string name="view_navigation_close">Close</string>
 </resources>

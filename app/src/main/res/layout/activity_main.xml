@@ -19,18 +19,18 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="?attr/colorPrimary"
-                app:subtitleTextColor="?attr/colorControlNormal"
-                app:titleTextColor="?attr/colorControlNormal" />
+                android:background="@color/colorPrimary"
+                app:subtitleTextColor="@color/colorBlack"
+                app:titleTextColor="@color/colorBlack" />
 
             <android.support.design.widget.TabLayout
                 android:id="@+id/tab_layout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:tabIndicatorColor="?attr/colorControlNormal"
+                app:tabIndicatorColor="@color/colorBlack"
                 app:tabIndicatorHeight="6dp"
-                app:tabSelectedTextColor="?attr/colorControlNormal"
-                app:tabTextColor="?attr/colorControlNormal" />
+                app:tabSelectedTextColor="@color/colorBlack"
+                app:tabTextColor="@color/colorBlack" />
 
         </android.support.design.widget.AppBarLayout>
 

@@ -5,16 +5,19 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.example.dmitro.bullsvscows.R;
 import com.example.dmitro.bullsvscows.fragment.FirstFragment;
 import com.example.dmitro.bullsvscows.fragment.SecondFragment;
 
 public class TabsFragmentPagerAdapter extends FragmentPagerAdapter {
-    private String[] tabs = new String[]{"Tab 1", "Tab 2"};;
+    private String[] tabs = new String[2];
     private Context context;
 
-    public TabsFragmentPagerAdapter(FragmentManager fm, Context context) {
+    public TabsFragmentPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
         this.context = context;
+        tabs[0] = context.getString(R.string.tab_game);
+        tabs[1] = context.getString(R.string.tab_chat);
     }
 
     @Override

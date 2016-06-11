@@ -13,17 +13,18 @@ public class SecondFragment extends Fragment {
 
     private static final int LAYOUT = R.layout.fragment_second;
 
-    public static SecondFragment getInstance(){
+    public static SecondFragment getInstance() {
         Bundle args = new Bundle();
         SecondFragment secondFragment = new SecondFragment();
         secondFragment.setArguments(args);
 
         return secondFragment;
     }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(LAYOUT, container,false);
+        View view = inflater.inflate(LAYOUT, container, false);
         return view;
     }
 }

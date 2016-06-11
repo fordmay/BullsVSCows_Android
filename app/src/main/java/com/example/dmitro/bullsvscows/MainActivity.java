@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.navigation);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+        navigationView.setNavigationItemSelectedListener(
+                new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 drawerLayout.closeDrawers();
@@ -64,8 +65,8 @@ public class MainActivity extends AppCompatActivity {
     private void initTab() {
         ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
         TabsFragmentPagerAdapter tabsFragmentPagerAdapter = new TabsFragmentPagerAdapter(
-                getSupportFragmentManager(),
-                MainActivity.this
+                MainActivity.this,
+                getSupportFragmentManager()
         );
         viewPager.setAdapter(tabsFragmentPagerAdapter);
 
